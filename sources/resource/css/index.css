@@ -1,3 +1,25 @@
-*{
-    padding: auto;
+.parent{
+    height: 500px;
+    border:3px solid red;
+}
+.child1{
+    font-size: 2em;
+    text-align: justify;
+    background-color: navajowhite;
+    width: 40vw; 
+    float: left;
+}
+.child2{
+    font-size: 2rem;
+    background-color: rgb(91, 58, 9);
+    text-align: justify;
+    float: left;
+    width: 45vw;
+}
+.slogan{
+    font-size: 0.5em;
+}
+.head{
+    text-align: center;
+    font-size: 40px;
 }
