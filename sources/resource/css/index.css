@@ -1,37 +1,39 @@
-/*
-The == background-color == property is used to set the background color of an element.
 
-The  == background-image ==  property is used to set the background image of an element.
+.font-family .times-new-roman{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    /*'Times New Roman'                ==> The quotation reason was that the font family name looked like a sentence.*/
+    /*'Times New Roman', Times, serif  ==> The comma reason was that the first font browser does not support it,
+                                           It will take a second family.*/
+    /*serif                            ==> The serif has sharp edges*/
 
-The  == background-repeat ==  property is used to control the repetition of an image in the background.
+}
+.font-family .arial{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    /*sans-serif                       ==> The sans-serif doesn't has a sharp edges*/
+}
+.font-family .bigparagaph{
+    font: italic bold 0 .5rem sans-serif;
+    /*font                       ==> its a shorthand prorpety*/
+}
+.font-family .googlefont{
+    /* font-family: 'Tangerine', sans-serif; */
+    font-family: 'Lobster', sans-serif;
+    
+    /*google font*/
+  /*  Choose a Font:
+Visit the Google Fonts website and select the font you want to use. You can use the search bar or browse through the different categories.
 
-The  == background-position ==  property is used to control the position of an image in the background.
+Select Styles:
+Once you've chosen a font, you can customize the styles (weight, style, etc.) by clicking on the "Customize" button. Choose the styles you want to include in your project.
 
-The  == background-attachment ==  property is used to control the scrolling of an image in the background.
+Add to Collection:
+Click on the "Use" button, and it will be added to your collection.
 
-The  == background ==  property is used as a shorthand to specify a number of other background properties.
+Embed Fonts:
+Scroll down to the bottom of the page, and you'll find a section titled "Embed Font." Copy the <link> tag provided there. This tag includes a link to the stylesheet with the font information.
 */
 
-.container2{
-    background-color: rgba(0, 255, 255, 0.186);
-    padding: 1em;
-    height:100vh;
-}
-.container1{    
-    height:100vh;
-    border: 1px solid red;
-    background-image: url("/sources/resource/img/tree.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
-    background-color: rgba(65, 77, 213, 0.826);
-    background-attachment: fixed;
-     
-}
-h1{
- color: white;
-text-transform: uppercase;
-align-items: center;
-justify-content: center;
-display: flex;
 }
