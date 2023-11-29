@@ -1,31 +1,26 @@
-.textstyle{
-    color: brown;
+*{
+    padding: 10px;
+    font-size: 24px;
 }
-.textstyle .textalign{
-    text-align: justify;
-    word-spacing: 10px;
-/* offset-x | offset-y | blur-radius | color */
-text-shadow: 1px 1px 1px rgba(166, 26, 26, 0.619);
-    
-    
+table,tr,td,th{
+    border-bottom: 1px solid gray;
+    border-collapse:collapse;/*its make a sinle line*/
+    padding:10px;
+   
 }
-.textstyle .textalignlast{
-    text-align-last:justify;
-    
+table{
+    width: 100%;
+    height:auto;
+    text-align:left;
 }
-.textstyle .direction{
-    direction: ltr;
-    text-indent: 1rem;
-    letter-spacing: 2px;
+td{
+    height:50px;
+    vertical-align:auto;/*verticaly align the TD top,bottom,middle*/
 }
-.textstyle .decorations{
-    /*text-decoration: underline dotted red 5px; shorthand*/
-    text-decoration-line:underline;
-    text-decoration-color: aqua;
-    text-decoration-thickness: 1px;
-    text-decoration-style:solid;
-    text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    text-emphasis-color:red ;
-    text-emphasis-style: double-circle;
+tr:nth-child(odd){
+    color: rgb(11, 11, 11);
+}
+tr:nth-child(even){
+    background-color: #000;
+    color: rgb(255, 255, 255);
 }
