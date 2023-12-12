@@ -3,20 +3,24 @@
     padding: 0;
 }
 .maincontainer{
-    border:2px solid black;
+    /* border:2px solid black; */
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
 }
 .header{
     background-color:green;
-    border:2px solid black;
+    /* border:2px solid black; */
     color: #fff;
-    text-align:center;
-    height: 5vh;
+    height: auto;
+}
+.header li{
+    float: right;
+display: inline;
+padding-left: 2%;
 }
 .scrolbar{
     background-color:beige;
-    border:2px solid black;
+    /* border:2px solid black; */
     float:left;
     height: 89vh;
     width:15%;
@@ -24,24 +28,40 @@
 }
 .maincontent {
     background-color:blue;
-    border:2px solid black;
+    /* border:2px solid black; */
     color: #fff;
     height: 89vh;
     margin-left:15%;
     width:84.8%;
 }
 .footer{
-    background-color:blueviolet;
-    border:2px solid black;
-    color: #fff;
+    /* background-color:blueviolet; */
+    /* border:2px solid black; */
+    color: #060606;
     text-align: center;
-    height: 5vh;
+    height: 3vh;
 }
 iframe{
     background-color:rgb(253, 253, 253);
-    border:2px solid black;
+    /* border:2px solid black; */
     color:black;
     height: 89vh;
     width:99.555%;
 
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+tr:hover{
+    background-color: antiquewhite;
 }
