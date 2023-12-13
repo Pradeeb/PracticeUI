@@ -3,34 +3,67 @@
     padding: 0;
     font-size:1.2rem;
 }
+body{
+    background-color: #f0f0f0;
+    background-image: url(/resource/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color:transparent;
+    padding: 2%;
+    margin:17% 38%;
+    width:15%;
+    opacity: 0.8;
+    border-radius: 5%;
+    backdrop-filter: blur(10px);
+    background-color: #38373757;
+    box-shadow: 0 0 100px rgba(0 0 0 );
+}
 div{
-    padding: 1.0rem 0;
+    padding-top: 1rem;
+}
+.username input {
+    border: none;
+    outline: none;
+    background-color:transparent;
+    color:#fff;
+    width:100%;
+}
+.password input {
+    border: none;
+    outline: none;
+    background-color:transparent;
+    color:#fff;
+    width:100%;
+}
+.button input[type="button"]{
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
     text-align: center;
-    margin: 0.50rem 0;
-}
-.navbar{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #53ccee76;
+    color: #252323;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left:30%;
     
-    background-color:aquamarine;
 }
-.menu{
-    float:left;
-    width: 33.33%;
-    height: 80vh;
-    background-color:antiquewhite;
+@media screen and(max-width:600px) {
+    input[type="button"] {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
 }
-.content{
-    float:left;
-    width: 33.33%;
-    height: 80vh;
-    background-color:aqua;
+.button input[type="button"]:hover {
+    background-color: #298dd0;
+  }
+.username{
+    border-bottom: 1px solid #fff;
 }
-.sidebar{
-    float:left;
-    width: 33.33%;
-    height: 80vh;
-    background-color:cornflowerblue;
-}
-.footer{
-    clear:both;
-     background-color:aquamarine;
+.password{
+    border-bottom: 1px solid #fff;
 }
