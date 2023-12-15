@@ -5,7 +5,7 @@
 }
 body{
     background-color: #f0f0f0;
-    background-image: url(/resource/img/background.jpg);
+    background-image: url(/sources/resource/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,6 +60,7 @@ div{
 }
 .button input[type="button"]:hover {
     background-color: #298dd0;
+    color:#fff ;
   }
 .username{
     border-bottom: 1px solid #fff;
