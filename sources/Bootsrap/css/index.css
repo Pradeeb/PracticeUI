@@ -1,0 +1,16 @@
+.navebar{
+    background-color: aqua;
+}
+.bg{
+    padding: 10px;
+    border: 1px solid red;
+}
+.main-container{
+    background-color:antiquewhite;
+    height: 50vh;
+    text-align: center;
+}
+h1{
+    color: rgb(66, 122, 10);
+}
+
