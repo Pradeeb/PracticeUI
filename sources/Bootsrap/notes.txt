@@ -1,0 +1,10 @@
+1. Bootstrap reboot or normalize
+2. Media view port (extra small <576px , small >=540px , medium >= 768px , large >= 992px , Extra large >= 1200px == >(class name : container,container-sm,md,lg,xl,fluid))
+3. Bootstrap containers
+4. Bootstrap grids(important)
+5. Bootstrap typography
+6. Bootstrap image
+7. Bootstrap table
+8. Bootstrap Components
+    I ) Navebar
+    II) 
