@@ -1,16 +1,128 @@
-.navebar{
-    background-color: aqua;
-}
-.bg{
-    padding: 10px;
-    border: 1px solid red;
-}
-.main-container{
-    background-color:antiquewhite;
-    height: 50vh;
-    text-align: center;
-}
-h1{
-    color: rgb(66, 122, 10);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+/* Header section */
+nav{
+    top:0;
+    left:0;
+    width:100%;
+    position: sticky !important;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+    z-index:10;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+
+/* Home section */
+#home{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1)),url(/sources/Bootsrap/image/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#home span{
+    color: yellow;
+}
+#home>p{
+    position: absolute;
+    font-size: 80px;
+    top: 60%;
+    opacity:0;
+    animation: text 3s ease-in-out;
+}
+#home p:nth-child(1){
+    animation-delay:0s;
+}
+#home p:nth-child(2){
+    animation-delay:3s;
+}
+#home p:nth-child(3){
+    animation-delay:6s;
+}
+#home p:nth-child(4){
+    animation-delay:9s;
+}
+@keyframes text {
+    50%{
+      opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@media screen and (max-width:576px){
+    #home p{
+        font-size: 80px;
+    }
+}
+
+/* About section */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(84, 84, 215, 0.584);
+    width: 100vw;
+    height:100vh;
+    transition: 1s;
+}
+.circle{
+width: 30em;
+height: 30em;
+background: white;
+border-radius: 30%;
+position:relative;
+box-shadow: 0px 5px 50px #ffff;
+transition: 1s;
+}
+.circle img{
+position: absolute;
+height: 23rem;
+width:20rem;
+top: 13%;
+left: 17%;
+border-radius: 35%;
+box-shadow: 0px 5px 50px #6962cd;
+transition: 1s;
+}
+#about:hover .circle{
+    width: 100em;
+    height: 45em;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius:10%;
+}
+#about:hover .circle img{
+left: 0%;
+border-radius: 0%;
+box-shadow: none;
+height: 26.1em;
+width:20em;
+}
+.circle .content{
+    opacity: 0;
+   }
+#about:hover .circle .content{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    opacity: 1;
+}
