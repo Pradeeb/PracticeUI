@@ -1,0 +1,19 @@
+.busBody{
+    height:auto;
+    background-color: aliceblue;
+}
+input{
+
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+.form-div{
+   padding-top: 28px;
+   padding-bottom: 30px;
+   height: 13rem;
+}
+.form-div button{
+    margin-left: 5rem;
+}
