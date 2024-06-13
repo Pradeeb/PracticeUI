@@ -1,19 +1,73 @@
-.busBody{
-    height:auto;
+.busBody {
+    height: 100vh;
     background-color: aliceblue;
 }
-input{
+
+input {
 
     border: none;
 }
+
 input:focus {
     outline: none;
 }
-.form-div{
-   padding-top: 28px;
-   padding-bottom: 30px;
-   height: 13rem;
+
+.form-div {
+    padding-top: 28px;
+    padding-bottom: 30px;
+    height: 13rem;
 }
-.form-div button{
+
+.form-div button {
+    margin-left: 5rem;
+}
+
+.bustype {
+    background-color: yellow;
+    width: 50%;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-left: 1%;
+
+}
+
+.busfrom {
+    background-color: rgb(175, 238, 165);
+    width: 50%;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.busto {
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(175, 238, 165);}
+
+.bustime {
+    background-color: rgb(255, 228, 228);
+    width: 90%;
+    border-radius:15px;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    margin-top: 12px;
+    font:bolder;
+
+}
+
+.bus-div {
+    padding-top: 28px;
+    padding-bottom: 30px;
+    height: 12rem;
+    background-color: rgb(147, 55, 209);
+}
+
+.bus-div button {
     margin-left: 5rem;
 }

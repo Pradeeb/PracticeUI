@@ -21,6 +21,8 @@ export default function Bus() {
 
         if (location) {
             fetchBusData();
+            var busBody = document.querySelector('.busBody');
+            busBody.style.height = 'auto';
         }
        
     }
@@ -35,12 +37,11 @@ export default function Bus() {
             </div>
 
                 {busList.map(bus => (
-                    <div  key={bus.id} id={`bus-${bus.id}`}  className="form-div border border-secondary rounded-5 m-4 bg-white">
-                        <div>Bus Number: {bus.busNo}</div>
-                        <div>Bus Type: {bus.busType}</div>
-                        <div>From: {bus.fromLocation}</div>
-                        <div>To: {bus.toLocation}</div>
-                        <div>Time: {bus.time}</div>
+                    <div  key={bus.id} id={`bus-${bus.id}`}  className="bus-div border border-secondary rounded-5 m-4">
+                        <div className="bustype">Bus Type: {bus.busType}</div>
+                        <div className="busfrom">From :  {bus.fromLocation}</div>
+                        <div className="busto">To : {bus.toLocation}</div>
+                        <div className="bustime">Time: {bus.time}</div>
                     </div>
                 ))}
                       

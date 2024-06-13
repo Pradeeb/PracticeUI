@@ -8,7 +8,7 @@ export default function Header() {
           <li className='nav-item px-3 flex-column '><i className="bi-bus-front  display-4 "></i>Bus</li>
           <li className='nav-item px-3 flex-column '><i className="bi-cart3 display-4"></i>Shop</li>
           <li className='nav-item px-3 flex-column '><i className="bi-hospital  display-4 "></i>Hospital</li>
-          <li className='nav-item px-3 flex-column '><i className="bi-prescription2 display-4 "></i>Medical</li>
+          <li className='nav-item px-3 flex-column '><i className="bi-book display-4 "></i>School</li>
         </ul>
       </header>
       );
