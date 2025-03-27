@@ -174,8 +174,14 @@ const DashboardTable = () => {
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('mail')}>
                 Email <FontAwesomeIcon icon={getSortIcon('mail')} />
               </th>
+              <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('modeOfSale')}>
+                Mode of Sale <FontAwesomeIcon icon={getSortIcon('modeOfSale')} />
+              </th>
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('remarks')}>
-                Remarks <FontAwesomeIcon icon={getSortIcon('remarks')} />
+                E-Book Remarks <FontAwesomeIcon icon={getSortIcon('remarks')} />
+              </th>
+              <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('otherRemarks')}>
+                Print Book Remarks <FontAwesomeIcon icon={getSortIcon('otherRemarks')} />
               </th>
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('lastContactDate')}>
                 Last Contact Date <FontAwesomeIcon icon={getSortIcon('lastContactDate')} />
@@ -189,17 +195,11 @@ const DashboardTable = () => {
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('clientType')}>
                 Client Type <FontAwesomeIcon icon={getSortIcon('clientType')} />
               </th>
-              <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('modeOfSale')}>
-                Mode of Sale <FontAwesomeIcon icon={getSortIcon('modeOfSale')} />
-              </th>
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('clientAddress.website')}>
                 Website <FontAwesomeIcon icon={getSortIcon('clientAddress.website')} />
               </th>
               <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('clientAddress.address')}>
                 Address <FontAwesomeIcon icon={getSortIcon('clientAddress.address')} />
-              </th>
-              <th className='text-left p-2 text-lg cursor-pointer' onClick={() => requestSort('otherRemarks')}>
-                Other Remarks <FontAwesomeIcon icon={getSortIcon('otherRemarks')} />
               </th>
               <th className='text-left p-2 text-lg'>Actions</th>
             </tr>
@@ -232,7 +232,13 @@ const DashboardTable = () => {
                       <input className="w-full" type="text" value={editItem.mail} onChange={(e) => handleInputChange(e, 'mail')} />
                     </td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>
+                      <input className="w-full" type="text" value={editItem.modeOfSale} onChange={(e) => handleInputChange(e, 'modeOfSale')} />
+                    </td>
+                    <td className='border-b-2 p-1 pr-16 font-semibold'>
                       <input className="w-full" type="text" value={editItem.remarks} onChange={(e) => handleInputChange(e, 'remarks')} />
+                    </td>
+                    <td className='border-b-2 p-1 pr-16 font-semibold'>
+                      <input className="w-full" type="text" value={editItem.otherRemarks} onChange={(e) => handleInputChange(e, 'otherRemarks')} />
                     </td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>
                       <input className="w-full" type="date" value={editItem.lastContactDate} onChange={(e) => handleInputChange(e, 'lastContactDate')} />
@@ -247,16 +253,10 @@ const DashboardTable = () => {
                       <input className="w-full" type="text" value={editItem.clientType} onChange={(e) => handleInputChange(e, 'clientType')} />
                     </td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>
-                      <input className="w-full" type="text" value={editItem.modeOfSale} onChange={(e) => handleInputChange(e, 'modeOfSale')} />
-                    </td>
-                    <td className='border-b-2 p-1 pr-16 font-semibold'>
                       <td className='font-bold text-lg'>{item.clientAddress.website || 'N/A'}</td>
                     </td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>
                       <td className='font-bold text-lg'>{item.clientAddress.address || 'N/A'}</td>
-                    </td>
-                    <td className='border-b-2 p-1 pr-16 font-semibold'>
-                      <input className="w-full" type="text" value={editItem.otherRemarks} onChange={(e) => handleInputChange(e, 'otherRemarks')} />
                     </td>
                     <td className='border-b-2 p-1 pr-16 text-center'>
                       <button onClick={handleSave} className="hover:bg-blue-800  bg-blue-600 w-20 rounded-md text-white  font-bl pb-1">
@@ -272,15 +272,15 @@ const DashboardTable = () => {
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.designation}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.phoneNumber || 'N/A'}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.mail}</td>
+                    <td className='border-b-2 p-1 pr-16 font-semibold'>{item.modeOfSale}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.remarks}</td>
+                    <td className='border-b-2 p-1 pr-16 font-semibold'>{item.otherRemarks}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{formatDate(item.lastContactDate)}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.contactMode}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{formatDate(item.followUpDate)}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.clientType}</td>
-                    <td className='border-b-2 p-1 pr-16 font-semibold'>{item.modeOfSale}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.clientAddress.website || 'N/A'}</td>
                     <td className='border-b-2 p-1 pr-16 font-semibold'>{item.clientAddress.address || 'N/A'}</td>
-                    <td className='border-b-2 p-1 pr-16 font-semibold'>{item.otherRemarks}</td>
                     <td className='border-b-2 p-1 pr-16 text-center'>
                       <button onClick={() => handleEdit(item)} className="text-blue-500 hover:text-blue-700">
                         <FontAwesomeIcon icon={faEdit} /> Edit

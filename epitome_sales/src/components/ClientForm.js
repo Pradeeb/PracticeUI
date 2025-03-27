@@ -283,13 +283,13 @@ export default function ClientForm() {
                                     value={addressFormData.modeOfSale}
                                     onChange={handleChangeContact}
                                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    placeholder="Remarks"
+                                    placeholder=" Mode Of Sale"
                                     required
                                 />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                                    Remarks
+                                    E-Book Remarks
                                 </label>
                                 <input
                                     type="text"
@@ -297,7 +297,21 @@ export default function ClientForm() {
                                     value={addressFormData.remarks}
                                     onChange={handleChangeContact}
                                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    placeholder="Remarks"
+                                    placeholder="E-Book Remarks"
+                                    required
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                                    Print Remarks
+                                </label>
+                                <input
+                                    type="text"
+                                    name="otherRemarks"
+                                    value={addressFormData.remarks}
+                                    onChange={handleChangeContact}
+                                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Print Remarks"
                                     required
                                 />
                             </div>
@@ -360,7 +374,7 @@ export default function ClientForm() {
                                     <option value="existing">Existing</option>
                                 </select>
                             </div>
-                            <div className="mb-4">
+                            {/* <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
                                     Other Remarks
                                 </label>
@@ -373,7 +387,7 @@ export default function ClientForm() {
                                     placeholder="Other Remarks"
                                     rows="4"
                                 />
-                            </div>
+                            </div> */}
 
                             <div className="flex items-center justify-between">
                             <button
