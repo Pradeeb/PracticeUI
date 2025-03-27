@@ -34,3 +34,10 @@ num="valan"
 const name="valan";
 
 console.log(name);
+
+
+// Default value set 
+//var test="valan"
+var test;
+let test1= test || "pradeeb"
+console.log(test1);
