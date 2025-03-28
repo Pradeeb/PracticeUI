@@ -1,9 +1,11 @@
 
+
 let person1={
     age:26,
     name:"valan"
 }
 
+/********  Named function *********/
 //without parameter
 function printUserName(){
    console.log("Person name :"+person1.name)
@@ -36,4 +38,21 @@ function printUserName(username="valan",password="Test"){
  
  //printUserName("pradeeb","Test@123");
  //printUserName("pradeeb",undefined);
- printUserName(undefined,undefined);
+ //printUserName(undefined,undefined);
+
+
+/********  Ananomus Function *********/
+
+const name = function (name){
+    console.log("test "+ name)
+}
+name("valan");
+
+
+/********  arrow Function *********/
+
+const age = (age) => {
+    console.log("test "+ age)
+}
+
+age(15);
