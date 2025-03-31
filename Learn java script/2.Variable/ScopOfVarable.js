@@ -1,9 +1,9 @@
 
-
+var iamVar = "i am a var varibe";
 function scopofVariable() {
     let iamLetOnMainBlock =  "i am a let main block varibe";
     if (true) {
-        var iamVar = "i am a var varibe";
+       
         let iamLet =  "i am a let varibe";
         const iamConst =  "i am a const varibe";
         console.log("inside Block"+iamVar);
