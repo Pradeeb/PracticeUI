@@ -1,3 +1,5 @@
+
+
 // *******************   var  **********************
 
 var age =30;  //Declaratuion and initialization
@@ -6,7 +8,7 @@ var age;      //Declaratuion
 
 age=40;      //initialization and assigning
 
-var age=70;  //re-declaration 
+//re-declaration var age=70;  
 
 age="valan"  //re-assign 
 
