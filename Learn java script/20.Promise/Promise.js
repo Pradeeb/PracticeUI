@@ -28,7 +28,7 @@ newPromise.then(
 );
 */
 
-// create call back hell
+// create call back hell  and below ia not ASYNC
 
 function fetchProfile(successFun, failFun) {
     let is=true;
@@ -47,3 +47,5 @@ fetchProfile(
     },
     (error)=>{console.log(error);}
 )
+
+console.log("test");
