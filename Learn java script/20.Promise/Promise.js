@@ -30,6 +30,7 @@ newPromise.then(
 
 // create call back hell  and below ia not ASYNC
 
+
 function fetchProfile(successFun, failFun) {
     let is=true;
 

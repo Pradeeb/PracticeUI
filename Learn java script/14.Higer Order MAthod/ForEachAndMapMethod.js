@@ -10,7 +10,7 @@ let fruits = ["apple", "banana", "orange", "pinapple", "lemen"]
 fruits.forEach(printFruite)
 
 function printFruite(currentElement, index, totalArrays) {
-    // console.log(currentElement,index,totalArrays);
+     console.log(currentElement,index,totalArrays);
 }
 
 //************************   Map function 

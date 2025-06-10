@@ -20,3 +20,11 @@ console.log(newObject.age);
 let mergeObject=Object.assign(person,{role:"developer",id:10});
 console.log(person);
 console.log(mergeObject);
+
+// 3. key()
+let getKeys=Object.keys(person)
+console.log(getKeys);
+
+// 4. values()
+let getValues=Object.values(person)
+console.log(getValues);

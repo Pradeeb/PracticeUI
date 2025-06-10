@@ -18,12 +18,11 @@ function traversingParent(){
 //Child
 
 function SelectChild(){
-
     let getParent=document.querySelector(".parent");
     console.log(getParent.childElementCount);
     console.log(getParent.childNodes);
-
 }
+
 SelectChild()
 
 

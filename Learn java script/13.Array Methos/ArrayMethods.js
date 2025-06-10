@@ -20,10 +20,10 @@ arr.push(7,8,9,10)  // add the new element at last possition
 
 console.log(arr);
 
-let removeFirst=arr.shift();
+let removeFirst=arr.shift(); // remove first element  & return the removed value
 console.log(removeFirst,arr);
 
-arr.unshift(1);
+arr.unshift(1); //add first
 console.log(arr);
 
 let slicearr=arr.slice() //create new array as copy
@@ -36,7 +36,7 @@ console.log(slicearr2);
 
 let arrOne=[1,2,[5,6,[7,8]],10];
 let ans=arrOne.flat(2);
-console.log(ans);
+console.log("Flat method =>",ans);
 
 let arrr=[1,5,6,9,8,1,2,10,4,45,"&"," "]
 
@@ -44,7 +44,7 @@ let arrr=[1,5,6,9,8,1,2,10,4,45,"&"," "]
 arrr.sort();
 
 //its doesn't give the coppy it affect the orginal array
-console.log(arrr);
+console.log("sort using ASCCI value  =>"+arrr);
 
 arrr.reverse();
 //its doesn't give the coppy it affect the orginal array

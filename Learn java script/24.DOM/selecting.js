@@ -9,8 +9,6 @@ console.log(p1.innerHTML);
 let p3=document.getElementById("p3")
 console.log(p3.innerHTML);
 
-let name=document.getElementsByTagName("UserName")
-console.log(name.innerHTML);
 
 let head=document.querySelector("h1");
 console.log(head.innerHTML);
