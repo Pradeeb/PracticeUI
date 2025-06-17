@@ -1,12 +1,11 @@
-import {
-  Card,
-  CardContent,
-  Typography,
-  Chip,
-  Grid,
-  Divider,
-  CircularProgress
-} from '@mui/material';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
+import CircularProgress from '@mui/material/CircularProgress';
+
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
