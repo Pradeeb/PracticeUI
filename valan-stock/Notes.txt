@@ -1,0 +1,10 @@
+# create project use VITE
+1. npm create vite@latest
+2. npm install
+3. npm run dev
+
+# command for react hook form and Yup library
+1 .npm install react-hook-form yup @hookform/resolvers
+
+# Tansstack Query add
+1. npm install @tanstack/react-query
