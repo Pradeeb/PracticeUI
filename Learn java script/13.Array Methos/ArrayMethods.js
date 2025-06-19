@@ -18,13 +18,13 @@ let removeLast=arr.pop();   // remove last element  & return the removed value
 
 arr.push(7,8,9,10)  // add the new element at last possition
 
-console.log(arr);
+//console.log(arr);
 
 let removeFirst=arr.shift(); // remove first element  & return the removed value
-console.log(removeFirst,arr);
+//console.log(removeFirst,arr);
 
 arr.unshift(1); //add first
-console.log(arr);
+//console.log(arr);
 
 let slicearr=arr.slice() //create new array as copy
 
@@ -32,10 +32,10 @@ let slicearr1=arr.slice(1) //create new array as copy give starting position
 
 let slicearr2=arr.slice(1,5) //create new array as copy give starting position and end posstion
 
-console.log(slicearr2);
+//console.log(slicearr2);
 
 let arrOne=[1,2,[5,6,[7,8]],10];
-let ans=arrOne.flat(2);
+let ans=arrOne.flat(1);
 console.log("Flat method =>",ans);
 
 let arrr=[1,5,6,9,8,1,2,10,4,45,"&"," "]

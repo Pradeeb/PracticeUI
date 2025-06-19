@@ -16,6 +16,6 @@ console.log(x,y,z);   //1 2 [ 3, 4, 5, 6 ]
 
 let nesstedArray=[1,2,[3,4,[5,6]]]
 
-let [v1,v2,[v3,v4]]=nesstedArray;  //folow the sturcture
+let [v1,v2,[v3,v4,[v5]]]=nesstedArray;  //folow the sturcture
 
-console.log(v3)
+console.log(v5)
