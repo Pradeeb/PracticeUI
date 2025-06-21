@@ -7,6 +7,9 @@ function f2(){
 function f3(){
     console.log("Third");
 }
+function f4(){
+    console.log("Four");
+}
 
 //Asynchronize 
 //
@@ -16,3 +19,4 @@ function f3(){
 f1();
 setTimeout(f2,2000)
 f3();
+setTimeout(f4,500)

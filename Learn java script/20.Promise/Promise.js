@@ -1,8 +1,9 @@
 
-
 /*
-let newPromise = new Promise((resolve, reject) => {
-    let response = true;
+
+
+let newPromise = new Promise((resolve, reject,pending) => {
+    let response = false;
 
     if (response) {
         resolve("Success!");
@@ -26,6 +27,7 @@ newPromise.then(
         console.log("end");
     }
 );
+
 */
 
 // create call back hell  and below ia not ASYNC

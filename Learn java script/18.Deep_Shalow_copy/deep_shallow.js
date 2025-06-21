@@ -49,27 +49,31 @@ let user3 = {...user,hobbies:{...user.hobbies}}
 user3.hobbies.game="basket ball test" 
 
 // console.log(user,user3);
-
+//***************************************************************************************************************
 
 // ARRAY Shalow coppy
 
-let num=[1,2,3,[4,5,6]];
+let num=[1,2,3,[4,5,6],7];
 
 // shallow coppy for array
 let num1=[...num]
+num1.pop();         // its not affect num memory because use spred operator.
+//console.log(num1,num);
+
 
 let arr=JSON.parse(JSON.stringify(num));
 
+//console.log(arr);
 
-// num1[0]="one";
+ num1[0]="one";
 // num1[3][0]=7;
 
 arr[3][0]=7;
-console.log(arr,num);
+//console.log(arr,num);
 
 
 
-//console.log(num1,num)
+console.log(num1,num)
 
 
 //now achive deep coppy
