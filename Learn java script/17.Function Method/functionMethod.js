@@ -8,9 +8,8 @@ let empolyee ={
     }
 }
 
-// console.log(empolyee.empolyee);
-// empolyee.introYourself(5,6);
-
+// console.log(empolyee);
+ //empolyee.introYourself(5,6);
 
 let empolyee1 ={
     eName:"valan",
@@ -20,12 +19,10 @@ let empolyee1 ={
         console.log(this.empolyee);  // it call global vale
         
     },
-
-
 }
 
 // console.log(empolyee1.empolyee);
-// empolyee1.introYourself(5,6);
+ empolyee1.introYourself(5,6);
 
 //********************** */ call()
 let person={
@@ -39,20 +36,20 @@ let person1 ={
     // PFName:"valan",
     // PSName:"Pradeeb",     //incase thes properties not have 
     introYourself:function(a,b){
-        console.log(this.PFName+" "+ this.PSName,a,b);
+    //    console.log(this.PFName+" "+ this.PSName,a,b);
         
     },
     add:function(a,b){
-        console.log("test =",a+b);
-        console.log(this.id);  // it call global vale
+     //   console.log("test =",a+b);
+//console.log(this.id);  // it call global vale
         return a+b;
     }
 }
 
-person1.introYourself();
-person1.introYourself.call(person,10,20);
-person1.introYourself.apply(person,[10,20]);
+//person1.introYourself();
+//person1.introYourself.call(person,10,20);
+ person1.introYourself.apply(person,[10,20]);
 
-let newfan = person1.add.bind(person,10,11)
+// let newfan = person1.add.bind(person,10,11)
 
-console.log(newfan());
+// console.log(newfan());

@@ -3,6 +3,8 @@
 let name=["valan","pradeeb"];
 let name1=["nazeem","mohamadhu"];
 
+console.log(name1);
+
 let allNames=[...name,...name1];
 
 // console.log(allNames);
@@ -24,4 +26,4 @@ let empolyeRole={
     expirience:4
 }
 
-console.log(empolyeRole)
+//console.log(empolyeRole)

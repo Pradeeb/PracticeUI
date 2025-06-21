@@ -4,7 +4,7 @@ let fruits = ["apple", "banana", "orange", "pinapple", "lemen"]
 // **************************** for each function 
 
 /*
-  1. foreach call back function done retrun any value
+  1. foreach call back function don't retrun any value
   2. We can not use chaninnig method beacue it dont return any think
 */
 fruits.forEach(printFruite)

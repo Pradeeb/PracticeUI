@@ -20,7 +20,7 @@
 let str =" Hello world ";
 
 //1.charAt(number);  retrun postion char
-console.log(str.charAt(6));
+console.log(str.charAt(5));
 
 //  2. charCodeAt(number);  retrun uniqu code retrun
 console.log(str.charCodeAt(6));

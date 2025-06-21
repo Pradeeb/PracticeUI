@@ -15,14 +15,14 @@ let employees=[
 
 //  1. filter return multuple value compare the find
 let filterValue=employees.filter(value => value.salary>10000);
-console.log(filterValue);
+//console.log(filterValue);
 
 //  2. filter method us iterate array like for each
 employees.filter(value =>console.log(value));
 
 //  3. it support chaninnig method
 let filterchain=employees.filter(value => value.salary>10000).fill({id:1,name1:"Test"});
-console.log(filterchain);
+//console.log(filterchain);
 
 //************    Find 
 
@@ -32,8 +32,8 @@ console.log(filterchain);
 */
 
 let findOne=employees.find((value,index)=>{
-    console.log(index++)
-    return value => value.salary>10000;
+//    console.log(index++)
+    return value => value.salary<10000;
 })
 
 console.log(findOne);
