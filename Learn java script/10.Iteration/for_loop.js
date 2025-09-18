@@ -5,4 +5,4 @@ for(let i=0; i<arr.length ;i++) console.log(arr[i]);
 
 let str = "valan pradeeb"
 
-for(let i=0; i<name.length ;i++) console.log(str[i]);
+for(let i=0; i<str.length ;i++) console.log(str[i]);

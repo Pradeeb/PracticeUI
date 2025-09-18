@@ -3,7 +3,7 @@
 let obj1={
     name : "valan"
 }
-let obj2=object1;
+let obj2=obj1;
 obj2.id=12; //it affect object1
 console.log(obj1,obj2) 
 
