@@ -2,6 +2,10 @@
 /*
  1.create();
  2. assign();
+ 3. keys();
+ 4.values();
+ 5.freeze();
+ 6.is Frozan();
 
 */
 
