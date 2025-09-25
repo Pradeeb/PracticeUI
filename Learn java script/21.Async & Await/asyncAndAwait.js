@@ -1,9 +1,9 @@
-let newPromise=new Promise((reslove,reject)=>{
-   let is=true;
+let newPromise = new Promise((resolve, reject) => {
+   let is = true;
 
-   if(is) reslove("success");
+   if (is) resolve("success");
    else reject("reject");
-})
+});
 
 async function run() {
     try {
@@ -15,7 +15,6 @@ async function run() {
     } catch (error) {
         console.error(error);
     }
-    
 }
 
 run();
