@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div>
+        <p class="w-1/2 m-10">In Tailwind CSS, the aspect-ratio utility is used to control the width-to-height ratio of an element — commonly for images, videos, or div containers.</p>
+        
+ <table class="table-auto w-3/4 border border-gray-900 shadow-md rounded-lg m-5">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="px-4 py-2 border border-gray-300 text-left">Class</th>
+        <th class="px-4 py-2 border border-gray-300 text-left">Ratio</th>
+        <th class="px-4 py-2 border border-gray-300 text-left">Use case</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2 border border-gray-300">aspect-auto</td>
+        <td class="px-4 py-2 border border-gray-300">auto</td>
+        <td class="px-4 py-2 border border-gray-300">No fixed ratio</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2 border border-gray-300">aspect-square</td>
+        <td class="px-4 py-2 border border-gray-300">1 / 1</td>
+        <td class="px-4 py-2 border border-gray-300">Perfect square</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2 border border-gray-300">aspect-video</td>
+        <td class="px-4 py-2 border border-gray-300">16 / 9</td>
+        <td class="px-4 py-2 border border-gray-300">Videos or widescreen</td>
+      </tr>
+    </tbody>
+  </table>
+        
+        <img class="w-1/2 aspect-5/2 hover:w-full hover:aspect-10/2" src="./img/bg.avif" alt="beach"> 
+        <iframe class="w-1/2 aspect-5/2 hover:w-full hover:aspect-video" src="https://www.youtube.com/watch?v=u1NlmFa0-68"></iframe> 
+    </div>
+</body>
+</html>
