@@ -16,7 +16,7 @@ console.log("hi"-true);
 
 
 //Explicit
-console.log(Number("10")+10);
+console.log("10"+String(10));
 console.log(Number(true)+10);
 console.log(Number([1,2])+10);
 console.log(Number("")+10);

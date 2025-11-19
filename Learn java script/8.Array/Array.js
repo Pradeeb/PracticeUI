@@ -1,6 +1,6 @@
 
 
-let flaver=["vanila","butterscortch","lavende",2];
+let flaver=["vanila","butterscortch","lavender",2];
 
 console.log(flaver.length);
 console.log(flaver[0]);
