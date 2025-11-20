@@ -1,4 +1,4 @@
-fetch("https://fakestoreapi.com/users/1")
+fetch("https://fakestoreapi.com/users")
 .then(res=>{
     if(!res.ok){
       return new Error("data not fond")
