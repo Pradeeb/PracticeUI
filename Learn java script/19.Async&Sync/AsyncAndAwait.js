@@ -1,11 +1,11 @@
-let newPromise = new Promise((fullfilled, failiure) => {
+let newPromise = new Promise((resolve, reject) => {
 
     let data = false;
 
     if (data) {
-        fullfilled("date fetched successfully");
+        resolve("date fetched successfully");
     } else {
-        failiure("data not found");
+        reject("data not found");
     }
 
 }
@@ -27,4 +27,4 @@ async function fetchData() {
 }
 
 
-//fetchData();
+fetchData();
