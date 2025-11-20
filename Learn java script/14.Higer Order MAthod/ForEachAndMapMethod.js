@@ -49,5 +49,8 @@ let neawArr2 = fruits.map((current2) => {
 
 console.log(neawArr2);
 
+fruits.forEach((fruit)=>{console.log(fruit)}
+);
+
 
 
