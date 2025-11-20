@@ -19,3 +19,10 @@ let nesstedArray=[1,2,[3,4,[5,6]]]
 let [v1,v2,[v3,v4,[v5]]]=nesstedArray;  //folow the sturcture
 
 console.log(v5)
+
+// get data from function 
+function returndata(){
+    return ["valan",27,"pradeeb"];
+}
+const [name,,lname]=returndata();
+console.log(lname,name)
