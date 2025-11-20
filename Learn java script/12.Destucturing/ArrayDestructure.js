@@ -24,5 +24,6 @@ console.log(v5)
 function returndata(){
     return ["valan",27,"pradeeb"];
 }
+
 const [name,,lname]=returndata();
 console.log(lname,name)

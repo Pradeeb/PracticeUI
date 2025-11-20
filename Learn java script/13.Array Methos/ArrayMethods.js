@@ -1,8 +1,8 @@
 
-// pop()
-// push()
-// shift()
-// unshift()
+// pop()       => remove last element  & return the removed value
+// push()      => add the new element at last possition
+// shift()     => remove first element  & return the removed value  
+// unshift()   => add first
 // slice()
 // flat()
 // sort()
