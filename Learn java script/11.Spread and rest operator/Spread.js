@@ -2,8 +2,8 @@
 
 let name=["valan","pradeeb"];
 let name1=["nazeem","mohamadhu"];
-
-console.log(name1);
+let compain=name+name1;
+//console.log(compain);
 
 let allNames=[...name,...name1];
 
@@ -17,7 +17,6 @@ let addName=[...allNames,"arul","selva"];
 let empolye={
     id:12,
     name:"valan"
-
 }
 
 let empolyeRole={
@@ -26,4 +25,4 @@ let empolyeRole={
     expirience:4
 }
 
-//console.log(empolyeRole)
+console.log(empolyeRole)
