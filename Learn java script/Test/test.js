@@ -13,7 +13,7 @@ fetch("https://fakestoreapi.com/users/2")
   });
 
 
-// second version
+// 2 version
 
 async function loadUserData() {
   try {

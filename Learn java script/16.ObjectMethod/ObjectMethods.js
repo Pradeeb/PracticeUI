@@ -32,3 +32,8 @@ console.log(getKeys);
 // 4. values()
 let getValues=Object.values(person)
 console.log(getValues);
+
+// 5.entries()
+Object.entries(person).forEach(([key, value]) => {
+  console.log(key, value);
+});
