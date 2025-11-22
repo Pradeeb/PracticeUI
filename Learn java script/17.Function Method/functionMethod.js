@@ -50,14 +50,14 @@ let person1 = {
 //function.prototype.apply(extra data,arguments like array)
 //function.prototype.bind(extra data,arguments with comma separet)
 
+//-----------------------------Example---------------------------------
 person1.introYourself();
-person1.introYourself.call(person, 10, 20);
-person1.introYourself.apply(person, [10, 20]);
-person1.introYourself.bind(person, 10, 20);
+person1.introYourself.call(person, 10, 20);     //extra data pass use call
+person1.introYourself.apply(person, [10, 20]);  //extra data pass use apply array is function need arg
+person1.introYourself.bind(person, 10, 20);     // its same to call but we call the function bind_learn()
 
-// let newfan = person1.add.bind(person,10,11)
-
-// console.log(newfan());
+let newfan = person1.add.bind(person,10,11)
+ console.log(newfan());
 
 
 // java script function protype method
