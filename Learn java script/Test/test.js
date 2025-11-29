@@ -3,7 +3,7 @@ fetch("https://fakestoreapi.com/users/2")
   .then(data => {
     const table = document.querySelector("table");
 
-    Object.entries(data).forEach(([key, value]) => {
+    Object.entries(data.address).forEach(([key, value]) => {
       if (typeof value === "object") value = JSON.stringify(value);
 
       const tr = document.createElement("tr");
