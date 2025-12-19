@@ -1,4 +1,4 @@
-//************************ primitive data
+//************************ primitive data 
 
 
 //Number
@@ -36,9 +36,12 @@ let users=["valan","pradeeb"]
 let student={
     id:1,
     age:18,
-    place:"chennai"
+    place:"chennai",
+    functionTest: ()=>{
+       console.log("Test");
+    }
 }
 
-//console.log(student.age);
+console.log(student.functionTest());
 
 

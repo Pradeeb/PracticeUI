@@ -3,14 +3,14 @@
 let name=["valan","pradeeb"];
 let name1=["nazeem","mohamadhu"];
 let compain=name+name1;
-//console.log(compain);
+console.log(compain);
 
 let allNames=[...name,...name1];
 
-// console.log(allNames);
+ console.log(allNames);
 
 let addName=[...allNames,"arul","selva"];
-// console.log(addName);
+ console.log(addName);
 
 // Object
 

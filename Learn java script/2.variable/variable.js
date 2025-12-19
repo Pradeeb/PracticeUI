@@ -8,11 +8,11 @@ var age;      //Declaratuion
 
 age=40;      //initialization and assigning
 
-//re-declaration var age=70;  
+ var age=70;  //re-declaration
 
 age="valan"  //re-assign 
 
-//console.log(age);
+console.log(age);
 
 
 // *******************   let  **********************

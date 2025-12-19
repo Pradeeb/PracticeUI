@@ -7,6 +7,8 @@ console.log(flaver[0]);
 console.log(flaver[2]);
 console.log(flaver[3]); //retuen undefined
 
+flaver[5]="valan"
+console.log(flaver);
 //Dense array
 
 let num=[1,2,3];   //continious idex memeory
