@@ -26,8 +26,8 @@ let empolyee1 = {
 
 //********************** */ call()
 let person = {
-    PFName: 'valan',
-    PSName: 'Pradeeb'
+    PFName: 'v',
+    PSName: 'p'
 }
 
 let person1 = {
@@ -37,7 +37,6 @@ let person1 = {
     PSName: "Pradeeb",     //incase thes properties not have 
     introYourself: function (a, b) {
         console.log(this.PFName + " " + this.PSName, a, b);
-
     },
     add: function (a, b) {
         console.log("test =", a + b);

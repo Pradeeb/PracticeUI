@@ -1,6 +1,6 @@
 
 
-/*
+
 
 let newPromise = new Promise((resolve, reject,pending) => {
      const success = Math.random() > 0.3;  // 70% chance of success
@@ -22,13 +22,18 @@ newPromise.then(
         console.log(fail);
     }
     
-).finally(
+).then(
+        (success)=>{
+       console.log(success);
+    }
+)
+.finally(
     ()=>{
         console.log("end");
     }
 );
 
-*/
+
 
 // create call back hell  and below ia not ASYNC
 

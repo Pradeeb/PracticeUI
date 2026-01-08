@@ -1,6 +1,6 @@
 //selecting Element
 
-let h1=document.getElementsByTagName("h1");
+let h1= document.getElementsByTagName("h1");
 console.log(h1.innerHTML);
 
 let p1=document.getElementsByClassName("p1")

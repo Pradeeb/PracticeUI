@@ -10,7 +10,7 @@ function calculateArea() {
         return;
     }
 
-    // Approx area formula (trapezoid)
+    //  Approx area formula (trapezoid)
     let avgLength = (top + bottom) / 2;
     console.log(avgLength);
     

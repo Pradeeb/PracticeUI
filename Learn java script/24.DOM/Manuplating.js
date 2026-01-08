@@ -19,6 +19,4 @@ function manipulateElement(){
 
      let orderList=document.querySelector("ol")
      orderList.append(newListElement);
-
-     
 }
